@@ -2,6 +2,7 @@ import asyncio
 
 import disnake
 from disnake.ext import commands
+from config import settings
 
 
 
@@ -115,4 +116,4 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run("MTMxMjQ2OTYxNzY2NjU1NTk2NQ.GOLyrG.6kf33_lXBIQU-2LKZOcrL_uz4zH5qd3mu_svMs")
+bot.run(settings['token'])
